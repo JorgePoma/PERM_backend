@@ -24,4 +24,4 @@ app.use(express.static(process.cwd()+"/MM_frontend/build/"));
 app.set('port', process.env.PORT || 8080)
 
 app.listen(app.get('port'));
-console.log("server on port 8080");
+console.log("server on port"+app.get('port'));
